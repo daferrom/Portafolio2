@@ -613,10 +613,7 @@ p.parrafoSobreMi{
     margin-left: 3px;
 
 }
-.logoHabilidad{
-    height:81px;
-    width: 92px;
-}
+
 
 /**************SECCION PROYECTOS*****************/
 .tituloSeccionProyectos{
@@ -792,7 +789,7 @@ p.parrafoSobreMi{
 .btn-submit:hover{
     background-color:#22A69E;
 }
-/*
+
 #proyectos{
     height:100%;
     width:100%;
@@ -835,7 +832,7 @@ p.parrafoSobreMi{
     background-color: black;
 }
 
-//  Buttons slider Style //
+/* Buttons slider Style */
 
 .buttons{
     
@@ -859,4 +856,3 @@ p.parrafoSobreMi{
 .buttons .div:hover{
     background-color: white;
 }
-*/
