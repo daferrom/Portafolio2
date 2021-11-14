@@ -76,23 +76,26 @@ ol, ul {
     border-radius: 20px;
     color:white;
 }
-.btn_menu{
-    margin-right:.30px;
+.btn_menu {
+    margin-right: 30px;
+    margin-left: 30px;
     font-size:25px;
     cursor: pointer;
     display:none;
-    
 }
 ul.show{
-    top:105px;
+    top: 136px;
 }
 
 @media screen and (max-width: 952px){
     .logo{
-        /*height:128px;
-        width:74px;*/
-        padding-left:35px;
+       
     }
+    .logo img{
+        padding: 0px; 
+    }
+   
+
     .menuItems li a{
         font-size:16px;   
     }
@@ -100,7 +103,7 @@ ul.show{
 
 @media screen and (max-width: 858px){
     .menu{
-        height:65px;
+        height:111px;
     }
     .btn_menu{
         display: inline-flex;
@@ -108,7 +111,7 @@ ul.show{
     .menuItems{
         position:fixed;
         width: 100vw;
-        height: calc(100%-65px);
+        height: calc(100%-111px);
         background:black;
         top:-100vh;
         text-align:center;
@@ -142,7 +145,7 @@ ul.show{
     }
     .menuItems{
         overflow:scroll;
-        height: calc(100%-65px);
+        height: calc(100%-111px);
     }
 }
 
@@ -583,6 +586,7 @@ p.parrafoSobreMi{
 /**************SECCION HABILIDADES*****************/
 #habilidades{
     margin-bottom:10%;
+    padding-bottom: 15%;
     
 }
 .habilidadesContainer{
@@ -713,6 +717,10 @@ p.parrafoSobreMi{
 }
 /************MEDIA QUERY HABILIDADES********/
 @media screen and (max-width: 470px){
+#habilidades{
+    
+}
+
 .tituloyBarra{
     display:flex;
     flex-direction: column;
@@ -790,6 +798,7 @@ p.parrafoSobreMi{
     padding: 20px;
     margin: 30px;
     margin-right: 50px;
+    margin-left: 50px;
     background: linear-gradient(180deg, #00181E 0%, rgba(38, 38, 38, 0) 85.94%);
     border-radius: 10px;
     margin-bottom: 20px;
@@ -815,7 +824,7 @@ p.parrafoSobreMi{
     margin-bottom:20px
 }
 /************MEDIA QUERY PROYECTOS********/
-@media screen and (max-width: 1481px){
+@media screen and (max-width: 1523px){
     .slider{
         display:flex;
         flex-direction: column;
@@ -846,13 +855,13 @@ p.parrafoSobreMi{
 }
 /************MEDIA QUERY PROYECTOS PARA PANTALLA MOVIL********/
 @media screen and (max-width: 470px){
+    
     .SeccionContainerProyectos{
         display: flex;
         align-items: center;
     }
     .projectContainer{
-        margin-left: 0px;
-        margin-right: 0px;
+        
     }
     .slider {
         align-items: center;
@@ -860,7 +869,7 @@ p.parrafoSobreMi{
         margin-right: 0px;
     }
     .tituloProyecto{
-        margin: 15px 0px;
+        margin: 20px 0px;
     }
     .containerGaleriaImgs{
         margin: 0;
@@ -869,7 +878,7 @@ p.parrafoSobreMi{
     }
     .tituloydescripcionProyecto{
         margin: 0px;
-        padding: 10px 20px;
+        padding: 40px;
         width: 100vw;
     }
    
@@ -881,7 +890,7 @@ p.parrafoSobreMi{
     margin-top: 110px;
     padding-top: 20px;
     margin-left: 0;
-    height: 256px;
+    height: 350px;
     background: #0580B7;
     display: flex;
     flex-direction: column;
@@ -890,32 +899,42 @@ p.parrafoSobreMi{
     text-align: center;
 }
 .logoFooterContainer{
-    padding-bottom:15px;
+    padding-bottom:30px;
 }
 #contact-section{
     padding:3em;
     margin: 0 auto;
-    display:flex;
+}
+.textFooter h6{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-form{
+    display: flex;
     flex-direction: column;
 }
 .form{
     display:flex;
     flex-direction: column;
-    width:90%;
-    margin-top:2em;
     justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top:2em;
 }
 .form input{
     display:flex;
     flex-direction: column;
     padding:10px 20px;
-    margin-bottom: 1em;
+    margin: 1em;
     background:#00151A;
     color:white;
     border-radius:8px 8px 0px 0px;
     border-bottom: 1px solid #fff;
+    width: 70%;
 }
 .form textarea{
+    margin: 1em;
     height:150px;
     background:#00151A;
     color:white;
@@ -923,8 +942,10 @@ p.parrafoSobreMi{
     border-radius:8px 8px 0px 0px;
     margin-bottom: 1em;
     border-bottom: 1px solid #fff;
+    width: 70%;
 }
 .btn-submit{
+    
     padding: 10px 20px;
     margin: 1em;
     border: none;
@@ -934,7 +955,8 @@ p.parrafoSobreMi{
     cursor: pointer;
     box-shadow:1px 1px 1px 1px rgba(255, 255, 255, 0.5);
     font-weight: 100;
-    color:white;  
+    color:white;
+    width: 70%;  
 }
 .btn-submit:hover{
     background-color:#22A69E;
