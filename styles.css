@@ -8,7 +8,9 @@
     font: inherit;
 	vertical-align: baseline;
 }
-
+html{
+    overflow-x: hidden;
+}
 body{
 
     margin-top:136px;
@@ -17,6 +19,8 @@ body{
     font-family:'century gothic',Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1;
     z-index: -2;
+    overflow-x: hidden;
+    
 }
 
 #introduction,#SobreMi{
@@ -501,7 +505,7 @@ p.parrafoSobreMi{
 
 @media screen and (max-width: 470px){
     body{
-        margin: 25px;
+        /*padding: 25px;*/
         margin-top: 111px;
         }
     .fotoDiego{
@@ -538,7 +542,7 @@ p.parrafoSobreMi{
         margin-bottom: 0px;
     }
     h2.nombreBold{
-        padding: 0 0 0 0;
+        padding: 10px 0px;
         font-size: 20px;
         justify-content: center;
         align-items: center;
@@ -551,15 +555,19 @@ p.parrafoSobreMi{
     h3.tituloParrafo{
         color:#01A0C6;
         justify-content: center;
-        font-size: 18px;        
+        font-size: 18px;
+        padding:5px 25px;        
     }
     .parrafoIntro{
      margin-top:10px;   
     }
     .parrafoIntro p{
-        padding-top:20px;
+        padding-top:10px;
         font-size:14px;
         line-height: 15px;
+    }
+    .parrafo {
+        padding : 10px 25px;
     }
     .datosDeContacto{
         font-size:12px;
@@ -701,9 +709,30 @@ p.parrafoSobreMi{
     z-index: 20;
     margin-top:2px;
     margin-left: 3px;
-
+    
+}
+/************MEDIA QUERY HABILIDADES********/
+@media screen and (max-width: 470px){
+.tituloyBarra{
+    display:flex;
+    flex-direction: column;
+    width:60%;
+    justify-content: space-around;
 }
 
+.barraProgreso{
+    position:relative;
+    content:'';
+    width: 100%;
+    height:25%;
+    background-color:white ;
+    border-radius: 15px;
+    z-index: 10;      
+}
+.logoHabilidad img{
+    width:50%;    
+}
+}
 
 /**************SECCION PROYECTOS*****************/
 .tituloSeccionProyectos{
@@ -815,6 +844,37 @@ p.parrafoSobreMi{
         flex-direction:column;
     }
 }
+/************MEDIA QUERY PROYECTOS PARA PANTALLA MOVIL********/
+@media screen and (max-width: 470px){
+    .SeccionContainerProyectos{
+        display: flex;
+        align-items: center;
+    }
+    .projectContainer{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .slider {
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .tituloProyecto{
+        margin: 15px 0px;
+    }
+    .containerGaleriaImgs{
+        margin: 0;
+        padding: 10px 20px;
+        width: 100vw; 
+    }
+    .tituloydescripcionProyecto{
+        margin: 0px;
+        padding: 10px 20px;
+        width: 100vw;
+    }
+   
+}
+
 
 /************Footer***********************/
 #footer{
