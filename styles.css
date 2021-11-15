@@ -84,13 +84,13 @@ ol, ul {
     display:none;
 }
 ul.show{
-    top: 136px;
+    top: 111px;
 }
 
 @media screen and (max-width: 952px){
-    .logo{
+    /*.logo{
        
-    }
+    }*/
     .logo img{
         padding: 0px; 
     }
@@ -111,7 +111,7 @@ ul.show{
     .menuItems{
         position:fixed;
         width: 100vw;
-        height: calc(100%-111px);
+        height: calc(100% - 111px);
         background:black;
         top:-100vh;
         text-align:center;
@@ -131,7 +131,7 @@ ul.show{
         font-weight:bold;
     }
     .menuItems li a:hover{
-        color:red;
+        color:#0580B7;
     }
     .logo{
         padding-left: 35px;
@@ -145,7 +145,7 @@ ul.show{
     }
     .menuItems{
         overflow:scroll;
-        height: calc(100%-111px);
+        height: calc(100% - 111px);
     }
 }
 
@@ -717,10 +717,10 @@ p.parrafoSobreMi{
 }
 /************MEDIA QUERY HABILIDADES********/
 @media screen and (max-width: 470px){
-#habilidades{
+/*#habilidades{
     
 }
-
+*/
 .tituloyBarra{
     display:flex;
     flex-direction: column;
@@ -860,9 +860,9 @@ p.parrafoSobreMi{
         display: flex;
         align-items: center;
     }
-    .projectContainer{
+    /*.projectContainer{
         
-    }
+    }*/
     .slider {
         align-items: center;
         margin-left: 0px;
